@@ -70,9 +70,9 @@ app.component('prmFullViewAfter', {
                         <div class="spaced-rows">
                              <div style="padding-top:1em;" ng-repeat="book in $ctrl.gbs_books">
                                  <div class="gbs-preview book">
-                                    <img src="{{book.thumbnail_url}}"/>
-                                    <a href="{{book.preview_url}}" target="_blank">
-                                        <img src="https://www.google.com/intl/{{$ctrl.gbs_lang}}/googlebooks/images/gbs_preview_button1.gif" border="0" style="margin-left: 0.5em" />
+                                    <img ng-src="{{book.thumbnail_url}}"/>
+                                    <a ng-href="{{book.preview_url}}" target="_blank">
+                                        <img ng-src="https://www.google.com/intl/{{$ctrl.gbs_lang}}/googlebooks/images/gbs_preview_button1.gif" border="0" style="margin-left: 0.5em" />
                                     </a>
                                  </div>
                              </div>
